@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Libros</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff7db;
+            color: #333; 
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .libros {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .libro {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .libro h2 {
+            margin: 5px 0;
+            font-size: 20px;
+            color: #393b3a; 
+        }
+
+        .libro img {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .libro img:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Biblioteca de Libros de la Saga de H.P.</h1>
+
+    <div class="libros">
+
+        <div class="libro">
+            <h2>Libro I</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/I - Harry Potter y la piedra filosofal.pdf')">
+                <img src="imagenes/hp1.png" alt="Libro I">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro II</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/II - Harry Potter y la camara secreta.pdf')">
+                <img src="imagenes/hp2.png" alt="Libro II">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro III</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/III - Harry Potter y el prisionero de Azkaban.pdf')">
+                <img src="imagenes/hp3.png" alt="Libro III">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro IV</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/IV - Harry Potter y el caliz de fuego.pdf')">
+                <img src="imagenes/hp4.png" alt="Libro IV">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro V</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/V - Harry Potter y la orden del fenix.pdf')">
+                <img src="imagenes/hp5.png" alt="Libro V">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro VI</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/VI - Harry Potter y el misterio del príncipe.pdf')">
+                <img src="imagenes/hp6.png" alt="Libro VI">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro VII</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/VII - Harry Potter y las reliquias de la muerte.pdf')">
+                <img src="imagenes/hp7.png" alt="Libro VII">
+            </a>
+        </div>
+
+        <div class="libro">
+            <h2>Libro VIII</h2>
+            <a href="javascript:void(0)" onclick="abrirPDF('libros/VIII - Harry Potter y el legado maldito.pdf')">
+                <img src="imagenes/hp8.png" alt="Libro VIII">
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        function abrirPDF(pdfURL) {
+            window.open(pdfURL, '_blank');
+        }
+    </script>
+</body>
+</html>
